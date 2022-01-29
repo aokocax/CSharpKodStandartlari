@@ -1,4 +1,4 @@
-namespace Oguz.CodeBase.CSharpCodeStandarts //Namespace isimlendirmede
+namespace Oguz.CodeBase.CSharpCodeStandarts //Namespace isimlendirme pascal case kullanılır
 {
     public enum Color //enumlarda çoğul isim seçilmez
     {
