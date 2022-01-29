@@ -1,4 +1,4 @@
-# Tek dosta üzerinde "C# Kod Standartları" örneği
+# Tek dosya üzerinde "C# Kod Standartları" örneği
 
 Kod standartlarının büyük kısmını kapsıyor ancak düzeltmek gereken yerler görürseniz belirtebilirsiniz.
 
