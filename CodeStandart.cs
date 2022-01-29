@@ -1,6 +1,6 @@
 namespace Oguz.CodeBase.CSharpCodeStandarts //Namespace isimlendirme pascal case kullanılır
 {
-    public enum Color //enumlarda çoğul isim seçilmez
+     public enum Color  //enumlarda çoğul isim seçilmez, tip belirtilmez (enum Color : long) gibi
     {
         Black,
         Red,
@@ -8,19 +8,18 @@ namespace Oguz.CodeBase.CSharpCodeStandarts //Namespace isimlendirme pascal case
         Blue,
         White
     }
-    ///
+    /// <summary>
+    /// Kod Standartlarını göstermek için oluşturulmuş bir sınf.
+    /// </summary>
     public class CodeStandart : ICode //sınıf isimler PascalCase, interface isimleri I ile başlar PascalCase
     {
         //Sınıf değişkenleri ve özellikleri sınıfın en üstüne yazılır.
-        public bool IsValid;
-        public bool HasContent;
-        public int MedianAge; //public değişkenlerde pascal case kullanılır.
-        private int _newAge; // private değişkenler alt tire ile başlar camel case kullanılır
-        private const string UserName = "aokocax"; // değişken isimlendirmede pascal case kullanılır, kısatlma kullanılmaz (usrName gibi)
+        public int IsValid; //public değişkenlerde Pascal Case kullanılır.
+        private int _newAge; // private değişkenler alt tire ile başlar Camel Case kullanılır
+        private string UserName = "aokocax"; // değişken isimlendirmede Pascal Case kullanılır, kısatlma kullanılmaz (usrName gibi)
         private const int FixedValue = 5; // const isimlendirmede büyük harf ve kelime aralarında alt tire kullanılmaz
-        //*değişken isimlendirmede hungarian case yani lblCount, txtName kullanılmaz.
-
-        private int ShowMethodSample(int firstValue, int secondValue)  // parametre isimleri camelCase
+        //*değişken isimlendirmede Hungarian Case yani lblCount, txtName kullanılmaz.
+        private int ShowMethodSample(int firstValue, int secondValue)  // Metod isimlendirme Pascal Case, parametre isimleri Camel Case
         {
             int multiplierCount = 10; //lokal değişkenler camelCase;
 
