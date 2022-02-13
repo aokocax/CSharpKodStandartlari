@@ -1,6 +1,6 @@
-namespace Oguz.CodeBase.CSharpCodeStandarts //Namespace isimlendirme Pascal Case kullanılır
+namespace Oguz.CodeBase.CSharpCodeStandarts //Namespace isimlendirme Pascal Case kullanılır.
 {
-    public enum Color  //enumlarda çoğul isim seçilmez
+    public enum Color  //Enumlarda çoğul isim seçilmez (Colors gibi)
     {
         Black,
         Red,
@@ -11,27 +11,27 @@ namespace Oguz.CodeBase.CSharpCodeStandarts //Namespace isimlendirme Pascal Case
     /// <summary>
     /// Kod Standartlarını göstermek için oluşturulmuş bir sınf.
     /// </summary>
-    public class CodeStandart : ICode //sınıf isimler PascalCase, interface isimleri I ile başlar PascalCase
+    public class CodeStandart : ICode //Sınıf isimlerind PascalCase kullanılır. Interface isimleri I ile başlar PascalCase kullanılır.
     {
         //Sınıf değişkenleri ve özellikleri sınıfın en üstüne yazılır.
-        public int IsValid; //public değişkenlerde Pascal Case kullanılır.
-        private int _newAge; // private değişkenler alt tire ile başlar Camel Case kullanılır
-        private string UserName = "aokocax"; // değişken isimlendirmede Pascal Case kullanılır, kısatlma kullanılmaz (usrName gibi)
-        private const int FixedValue = 5; // const isimlendirmede büyük harf ve kelime aralarında alt tire kullanılmaz
-        //*değişken isimlendirmede Hungarian Case yani lblCount, txtName kullanılmaz.
-        private int ShowMethodSample(int firstValue, int secondValue)  // Metod isimlendirme Pascal Case, parametre isimleri Camel Case
+        public int IsValid; //Public değişkenlerde Pascal Case kullanılır.
+        private int _newAge; //Private değişkenler alt tire ile başlar Camel Case kullanılır.
+        private string UserName = "aokocax"; //Değişken isimlendirmede Pascal Case kullanılır, kısatlma kullanılmaz (usrName gibi).
+        private const int FixedValue = 5; //Const isimlendirmede büyük harf ve kelime aralarında alt tire kullanılmaz.
+        //*Değişken isimlendirmede Hungarian Case yani lblCount, txtName kullanılmaz.
+        private int ShowMethodSample(int firstValue, int secondValue)  //Metod isimlendirme Pascal Case, parametre isimleri Camel Case.
         {
-            int multiplierCount = 10; //lokal değişkenler camelCase;
+            int multiplierCount = 10; //Lokal değişkenlerde camelCase kullanılır.
 
-            //*değişken isimlendirmede tip kullanılmaz iCount,intCount ya da strName yanlış kullanımdır.
+            //*Değişken isimlendirmede tip kullanılmaz iCount,intCount ya da strName yanlış kullanımdır.
 
             var localValue = 3; //Sağ taraf değerinin tipi açıkça görülebiliyorsa var kullanılabilir.
             
-            int result=((firstValue+secondValue)/multiplierCount)+(FixedValue+localValue); //var kullanımı değerin direkt tanımlandığı değişkenlerde kullanılır
+            int result=((firstValue+secondValue)/multiplierCount)+(FixedValue+localValue); //Sağ taraf işleminin sonucunun tipinin belli olması için tip ile değişken tanımlama daha uygundur.
 
-            if (result < 0) // parantezler için ayrı satır açılır, dikey olarak hizalanır.
+            if (result < 0) // Parantezler için ayrı satır açılır, dikey olarak hizalanır.
             { 
-                //tek satırlık if ifadeleri tek satırda yazılabilri if (result<-1) return 0; gibi
+                //Tek satırlık if ifadeleri tek satırda yazılabilri if (result<-1) return 0; gibi
                 string hello = "Hello world";
                 Debug.WriteLine(hello);
             }
