@@ -16,7 +16,7 @@ namespace Oguz.CodeBase.CSharpCodeStandarts //Namespace isimlendirme Pascal Case
         //Sınıf değişkenleri ve özellikleri sınıfın en üstüne yazılır.
         public int IsValid; //Public değişkenlerde Pascal Case kullanılır.
         private int _newAge; //Private değişkenler alt tire ile başlar Camel Case kullanılır.
-        private string UserName = "aokocax"; //Değişken isimlendirmede Pascal Case kullanılır, kısatlma kullanılmaz (usrName gibi).
+        private string UserName = "aokocax"; //Değişken isimlendirmede Pascal Case kullanılır, kısaltma kullanılmaz (usrName gibi).
         private const int FixedValue = 5; //Const isimlendirmede büyük harf ve kelime aralarında alt tire kullanılmaz.
         //*Değişken isimlendirmede Hungarian Case yani lblCount, txtName kullanılmaz.
         private int ShowMethodSample(int firstValue, int secondValue)  //Metod isimlendirme Pascal Case, parametre isimleri Camel Case.
